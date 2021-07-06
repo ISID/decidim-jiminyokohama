@@ -1,0 +1,63 @@
+// // Variables
+// 
+// $primary: #ef604d;
+// $primary-rgb: 239,96,77;
+// $secondary: #599aa6;
+// $secondary-rgb: 89,154,166;
+// $success: #57d685;
+// $success-rgb: 87,214,133;
+// $warning: #ffae00;
+// $warning-rgb: 255,174,0;
+// $alert: #ec5840;
+// $alert-rgb: 236,88,64;
+// 
+// $proposals: #238ff7;
+// $actions: #57d685;
+// $debates: #fa6c96;
+// $meetings: #fabc6c;
+// 
+// $twitter: #55acee;
+// $facebook: #3b5998;
+// $google: #4285f4;
+// 
+// // background colors used in public diff views
+// $color-addition: #e6ffed;
+// $color-removal: #ffeef0;
+// 
+// // Define custom properties as css color variables
+// 
+// :root{
+//   --primary: #{$primary};
+//   --primary-rgb: #{$primary-rgb};
+//   --secondary: #{$secondary};
+//   --secondary-rgb: #{$secondary-rgb};
+//   --success: #{$success};
+//   --success-rgb: #{$success-rgb};
+//   --warning: #{$warning};
+//   --warning-rgb: #{$warning-rgb};
+//   --alert: #{$alert};
+//   --alert-rgb: #{$alert-rgb};
+//   --proposals: #{$proposals};
+//   --actions: #{$actions};
+//   --debates: #{$debates};
+//   --meetings: #{$meetings};
+//   --twitter: #{$twitter};
+//   --facebook: #{$facebook};
+//   --google: #{$google};
+// }
+
+$navbar-active-shadow-small: inset 4px 0 0 0 white;
+$navbar-active-shadow-medium: inset 0 4px 0 0 white;
+
+
+.main-nav__link--active a{
+    box-shadow: $navbar-active-shadow-small !important;
+  }
+
+@media screen and (min-width: 640px) {
+    .main-nav__link--active a{
+        box-shadow: $navbar-active-shadow-medium !important;
+    }
+}
+
+@import "decidim/application";
