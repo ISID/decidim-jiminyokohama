@@ -1,0 +1,11 @@
+<p>
+  <%= t "decidim.gamification.description" %>
+  <%= link_to t("decidim.gamification.all_badges_link"), gamification_badges_path %>
+</p>
+<div class="row small-up-2 medium-up-4 card-grid badges">
+  <% available_badges.each do |badge| %>
+    <% if badge.name != "invitations" && badge.name != "attended_meetings" && badge.name != "accepted_proposals" then %>
+    <%= cell "decidim/badge", model, badge: badge %>
+    <% end %>
+  <% end %>
+</div>
